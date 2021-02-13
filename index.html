@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Valentine</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div id="body-part" class="header">
+       <h2>Are You My Valentine..???</h2>
+       <h3>please choose the button <br> then click</h3>
+       <button id="yes-button" class="yes-btn" type="button">Yes</button>
+       <button class="no-btn" type="button">No</button>
+   </div> 
+
+   <section id="theme-area" class="yes-area">
+    <div class="image-area">
+        <img src="images.jpg" width="400" height="300">
+    </div>
+       <div class="header yes-header"> 
+     <h4>You are unique....<br>
+      You are caring...<br>
+      You are the Best...<br>
+      And I am the luckiest to have you in my life..!!!<br>
+      Happy Valentine's Day my sweet heart..!!!</h4>
+      <h4 class="h4-text">I love You Sooooo Much....</h4>
+       </div>
+    
+   </section>
+ <script>
+      const yesBtn = document.getElementById("yes-button");
+        yesBtn.addEventListener("click", function () {
+            const yesArea = document.getElementById("body-part").style.display = "none";
+
+            const themeArea = document.getElementById("theme-area").style.display = "block";
+        });
+     </script>
+</body>
+</html>
